@@ -1,0 +1,14 @@
+@import '../../../App-styles/mixins';
+@import '../../../App-styles/variables';
+
+.nav-menu{
+    @include size(55%, 100%, 0, 25px);
+    border: 2px solid green;
+    background: peachpuff;
+    list-style: none;
+
+    .menu-button{
+        width: auto;
+        border: 2px solid green;
+    }
+}

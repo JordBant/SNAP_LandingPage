@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+.menu-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: NULL;
+  -ms-flex-item-align: NULL;
+      align-self: NULL;
+  position: relative;
+  width: auto;
+}
+
+.menu-item > * {
+  margin: 8px;
+}
+
+.menu-item .right {
+  margin: 0;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  top: 5%;
+  left: 55%;
+  position: absolute;
+  background: red;
+}
+
+.menu-item .left {
+  margin: 0;
+  padding: 0;
+  width: 10px;
+  height: 10px;
+  top: 5%;
+  right: 100%;
+  position: absolute;
+  background: blue;
+}
+
+.menu-item h3 {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 12px;
+}
+
+.menu-item .link-item {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 12px;
+}
+
+.nav-btns {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 12px;
+  height: 47px;
+  margin: 2.5px 0;
+  border-radius: 12.5px;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+/*# sourceMappingURL=nav-menu-items.css.map */

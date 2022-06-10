@@ -1,4 +1,4 @@
-@use './variables' as vars;
+@import './variables';
 
 @mixin size($fillWidth-width, $fillHeight-height, $margin-margin, $padding-padding){
     margin: $margin-margin;
@@ -16,8 +16,9 @@
     align-self: $self-self_al; 
 }
 
-@mixin font($weight-weight, $size-size, $color-color){
-    font-family: vars.$family;
-    color: $color;
-    font-size: 18px;
+@mixin font($weight-weight, $color-color, $size-size){
+    font-family: $family;
+    font-weight: $weight-weight;
+    color: $color-color;
+    font-size: $size-size;
 };

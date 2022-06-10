@@ -1,20 +1,12 @@
-import './App.css';
+import './App-styles/App.css';
+import Temp from './components/temp-component';
+import NavMenu from './components/navigation-menu/navigation-menu';
 
 function App() {
   return (
     <div className="App">
-      Features
-      Company
-      Careers
-      About
-    
-      Login
-      Register
-    
-      Make remote work
-    
-      Get your team in sync, no matter your location. Streamline processes, 
-      create team rituals, and watch productivity soar.
+      <NavMenu />
+      <Temp/>
     </div>
   );
 }

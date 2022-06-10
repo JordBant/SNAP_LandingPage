@@ -1,0 +1,10 @@
+@import '../../../App-styles/mixins';
+@import '../../../App-styles/variables';
+
+.nav-menu-container{
+    @include size(100%, auto, 0, 0);
+    @include flex(center, start, column, NULL, NULL);
+    border: 2px solid cyan;
+
+    & > *{ @include size(100%, auto, 2.5px, 0); }  
+}

@@ -1,0 +1,40 @@
+@import '../../../App-styles/mixins';
+@import '../../../App-styles/variables';
+
+
+
+.menu-item{
+    @include flex(center, start, column, NULL, NULL);
+    position: relative;
+    // border: 2px solid goldenrod;
+    width: auto;
+    & > * {  margin: 8px; }
+
+    .right{
+        @include size(10px, 10px, 0 ,0);
+        top: 5%; left: 55%;
+        position: absolute;
+        background: red;
+    }
+    .left{
+        @include size(10px, 10px, 0 ,0);
+        top: 5%; right: 100%;
+        position: absolute;
+        background: blue;
+    }
+
+    h3{ 
+        @include font(500, black, 12px);
+    }
+
+    .link-item{
+        @include font(500, black, 12px);
+    }
+}
+.nav-btns{
+    @include font(500, black, 12px);
+    height: 47px;
+    margin: 2.5px 0;
+    border-radius: 12.5px;
+    align-self: center;
+}
