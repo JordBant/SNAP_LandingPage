@@ -3,13 +3,6 @@ import React from 'react'
 const Temp = () => {
   return (
     <div>
-      Features
-      Company
-      Careers
-      About
-    
-      Login
-      Register
     
       Make remote work
     

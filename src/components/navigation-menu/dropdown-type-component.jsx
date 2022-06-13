@@ -1,27 +1,39 @@
 import MenuItem from "./menu-item"
-import { Fragment } from "react"
+import { Fragment, useState } from "react"
+import DropdownArrow from "../icon-components/dropdown-icon-component"
 
 const DropdownType = ({itemName}) => {
-        if (itemName ===  'Features') {
+    const [isActive, setIsActive] = useState(false)
+    const handleToggle = () =>  setIsActive(!isActive)
+    const toggleActive = isActive ? 'active' : ''
+
+        if (itemName === 'Features') {
             return(
                 <Fragment>
-                    
-                        <h3> { itemName } </h3>
-                        <ul className= "dropdown-item"> 
-                            <MenuItem link itemName = 'Todo List'/>
-                            <MenuItem link itemName = 'Calender'/>
-                            <MenuItem link itemName = 'Reminders'/>
-                            <MenuItem link itemName = 'Planning '/>
+                        <div className="dropdown-heading">
+                            <h3 className="dropdown-title"> { itemName } </h3>
+                            <button className= {`dropdown-icon ${ toggleActive }`} onClick = {handleToggle}>
+                                <DropdownArrow />
+                            </button>
+                        </div>
+                        <ul className= {`dropdown-item ${ toggleActive }`}> 
+                            <MenuItem link className = 'todo' itemName = 'Todo List'/>
+                            <MenuItem link className = 'calender' itemName = 'Calender'/>
+                            <MenuItem link className = 'reminders' itemName = 'Reminders'/>
+                            <MenuItem link className = 'planning' itemName = 'Planning '/>
                         </ul>
-                    
                 </Fragment>
             )
         } else if(itemName === 'Company') {
         return(
             <Fragment>
-               
-                    <h3> { itemName } </h3>
-                    <ul className= "dropdown-item"> 
+                    <div className="dropdown-heading">
+                        <h3 className="dropdown-title"> { itemName } </h3>
+                        <button className= {`dropdown-icon ${ toggleActive }`} onClick = {handleToggle}>
+                            <DropdownArrow />
+                        </button>
+                    </div>
+                    <ul className= {`dropdown-item ${ isActive ? 'active' : null }`}> 
                         <MenuItem link itemName = 'History'/>
                         <MenuItem link itemName = 'Our Team'/>
                         <MenuItem link itemName = 'Blog'/>

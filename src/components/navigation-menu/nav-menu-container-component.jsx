@@ -5,8 +5,8 @@ import './nav-menu-styles/nav-container.css'
 const NavContainer = () => {
   return (
     <div className="nav-menu-container">
-        <MenuItem itemName = {'Features'} iconPosition = {'right'} />
-        <MenuItem itemName = {'Company'} iconPosition = {'left'} />
+        <MenuItem itemName = {'Features'} />
+        <MenuItem itemName = {'Company'} />
         <MenuItem itemName = { 'Careers' } link/>
         <MenuItem itemName = { 'About' } link/>
 

@@ -1,28 +1,39 @@
 @import '../../../App-styles/mixins';
 @import '../../../App-styles/variables';
 
-
-
 .menu-item{
     @include flex(center, start, column, NULL, NULL);
+    border: 2px solid goldenrod;
     position: relative;
-    // border: 2px solid goldenrod;
-    width: auto;
     & > * {  margin: 8px; }
 
-    .right{
-        @include size(10px, 10px, 0 ,0);
-        top: 5%; left: 55%;
-        position: absolute;
-        background: red;
-    }
-    .left{
-        @include size(10px, 10px, 0 ,0);
-        top: 5%; right: 100%;
-        position: absolute;
-        background: blue;
+    .dropdown-heading{
+        @include flex(start, center, NULL, NULL, NULL);
+        margin: 0;
+        width: 100%;
+        border: 2px solid red;
+        .dropdown-icon{
+            margin: 0 2px;
+            transition: 0.3s ease-in-out all;
+            border: none;
+            background: transparent;
+            transform: rotate(180deg);
+        }
+        .dropdown-icon.active{
+            transform: rotate(0deg);
+        }
     }
 
+    .dropdown-item{
+        overflow: hidden;
+        transition: all 0.59s ease-in-out;
+        margin: 0;
+        max-height: 0;
+    }
+    .dropdown-item.active{
+        max-height: 500px;
+    }
+    
     h3{ 
         @include font(500, black, 12px);
     }
@@ -31,10 +42,27 @@
         @include font(500, black, 12px);
     }
 }
-.nav-btns{
-    @include font(500, black, 12px);
-    height: 47px;
-    margin: 2.5px 0;
-    border-radius: 12.5px;
-    align-self: center;
-}
+
+.menu-item.todo::before{
+    content: url('../../../assets/icon-todo.svg');
+    position: absolute;
+    right: 100%;
+    }
+
+.menu-item.calender::before{
+    content: url('../../../assets/icon-calendar.svg');
+    position: absolute;
+    right: 100%;
+    }
+
+.menu-item.reminders::before{
+     content: url('../../../assets/icon-reminders.svg');
+    position: absolute;
+    right: 100%;
+    }
+
+.menu-item.planning::before{
+    content: url('../../../assets/icon-planning.svg');
+    position: absolute;
+    right: 100%;
+    }

@@ -2,13 +2,9 @@
 @import '../../../App-styles/variables';
 
 .nav-menu{
-    @include size(55%, 100%, 0, 25px);
+    @include size(55%, 100%, 0, 0 25px);
+    position: absolute;
     border: 2px solid green;
     background: peachpuff;
     list-style: none;
-
-    .menu-button{
-        width: auto;
-        border: 2px solid green;
-    }
 }

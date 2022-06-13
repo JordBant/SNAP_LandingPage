@@ -2,7 +2,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
 .nav-menu-container {
   margin: 0;
-  padding: 0;
+  padding: 10px 0;
   width: 100%;
   height: auto;
   display: -webkit-box;
@@ -25,9 +25,20 @@
 }
 
 .nav-menu-container > * {
-  margin: 2.5px;
+  margin: 2.5px 0;
   padding: 0;
   width: 100%;
   height: auto;
+}
+
+.nav-menu-container .btns {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  color: black;
+  font-size: 11px;
+  padding: 12.5px;
+  height: 35px;
+  border-radius: 10px;
+  border: 2px solid brown;
 }
 /*# sourceMappingURL=nav-container.css.map */

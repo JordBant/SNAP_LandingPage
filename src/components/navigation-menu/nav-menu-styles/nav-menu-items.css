@@ -17,34 +17,61 @@
   justify-self: NULL;
   -ms-flex-item-align: NULL;
       align-self: NULL;
+  border: 2px solid goldenrod;
   position: relative;
-  width: auto;
 }
 
 .menu-item > * {
   margin: 8px;
 }
 
-.menu-item .right {
+.menu-item .dropdown-heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: NULL;
+          flex-direction: NULL;
+  justify-self: NULL;
+  -ms-flex-item-align: NULL;
+      align-self: NULL;
   margin: 0;
-  padding: 0;
-  width: 10px;
-  height: 10px;
-  top: 5%;
-  left: 55%;
-  position: absolute;
-  background: red;
+  width: 100%;
+  border: 2px solid red;
 }
 
-.menu-item .left {
+.menu-item .dropdown-heading .dropdown-icon {
+  margin: 0 2px;
+  -webkit-transition: 0.3s ease-in-out all;
+  transition: 0.3s ease-in-out all;
+  border: none;
+  background: transparent;
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
+}
+
+.menu-item .dropdown-heading .dropdown-icon.active {
+  -webkit-transform: rotate(0deg);
+          transform: rotate(0deg);
+}
+
+.menu-item .dropdown-item {
+  overflow: hidden;
+  -webkit-transition: all 0.59s ease-in-out;
+  transition: all 0.59s ease-in-out;
   margin: 0;
-  padding: 0;
-  width: 10px;
-  height: 10px;
-  top: 5%;
-  right: 100%;
-  position: absolute;
-  background: blue;
+  max-height: 0;
+}
+
+.menu-item .dropdown-item.active {
+  max-height: 500px;
 }
 
 .menu-item h3 {
@@ -61,16 +88,27 @@
   font-size: 12px;
 }
 
-.nav-btns {
-  font-family: "Epilogue", sans-serif;
-  font-weight: 500;
-  color: black;
-  font-size: 12px;
-  height: 47px;
-  margin: 2.5px 0;
-  border-radius: 12.5px;
-  -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
-      align-self: center;
+.menu-item.todo::before {
+  content: url("../../../assets/icon-todo.svg");
+  position: absolute;
+  right: 100%;
+}
+
+.menu-item.calender::before {
+  content: url("../../../assets/icon-calendar.svg");
+  position: absolute;
+  right: 100%;
+}
+
+.menu-item.reminders::before {
+  content: url("../../../assets/icon-reminders.svg");
+  position: absolute;
+  right: 100%;
+}
+
+.menu-item.planning::before {
+  content: url("../../../assets/icon-planning.svg");
+  position: absolute;
+  right: 100%;
 }
 /*# sourceMappingURL=nav-menu-items.css.map */

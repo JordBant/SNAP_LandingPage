@@ -1,0 +1,119 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
+* {
+  -webkit-transition: .25s ease-in-out;
+  transition: .25s ease-in-out;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.line {
+  display: block;
+  background: #566973;
+  border-radius: 2px;
+}
+
+.menu-toggle {
+  width: 100px;
+  height: 100px;
+  margin: 50px auto;
+  position: relative;
+  position: relative;
+  cursor: pointer;
+  background: rgba(255, 255, 255, 0.4);
+  border-radius: 5px;
+}
+
+.menu-toggle:hover {
+  background: rgba(255, 255, 255, 0.8);
+}
+
+.menu-toggle .hamburger {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+}
+
+.menu-toggle .hamburger .line {
+  width: 60px;
+  height: 4px;
+  position: relative;
+  top: 24px;
+  left: 20px;
+  margin: 10px 0;
+}
+
+.menu-toggle .hamburger .line:nth-child(1) {
+  -webkit-transition-delay: .5s;
+          transition-delay: .5s;
+}
+
+.menu-toggle .hamburger .line:nth-child(2) {
+  -webkit-transition-delay: .625s;
+          transition-delay: .625s;
+}
+
+.menu-toggle .hamburger .line:nth-child(3) {
+  -webkit-transition-delay: .75s;
+          transition-delay: .75s;
+}
+
+.menu-toggle .cross {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu-toggle .cross .line:nth-child(1) {
+  height: 0%;
+  width: 4px;
+  position: absolute;
+  top: 10%;
+  left: 48px;
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.menu-toggle .cross .line:nth-child(2) {
+  width: 0%;
+  height: 4px;
+  position: absolute;
+  left: 10%;
+  top: 48px;
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+}
+
+.menu-toggle.on .hamburger .line {
+  width: 0%;
+}
+
+.menu-toggle.on .hamburger .line:nth-child(1) {
+  -webkit-transition-delay: 0s;
+          transition-delay: 0s;
+}
+
+.menu-toggle.on .hamburger .line:nth-child(2) {
+  -webkit-transition-delay: .125s;
+          transition-delay: .125s;
+}
+
+.menu-toggle.on .hamburger .line:nth-child(3) {
+  -webkit-transition-delay: .25s;
+          transition-delay: .25s;
+}
+
+.menu-toggle.on .cross .line:nth-child(1) {
+  height: 80%;
+  -webkit-transition-delay: .625s;
+          transition-delay: .625s;
+}
+
+.menu-toggle.on .cross .line:nth-child(2) {
+  width: 80%;
+  -webkit-transition-delay: .375s;
+          transition-delay: .375s;
+}
+/*# sourceMappingURL=hamburger-icon.css.map */
