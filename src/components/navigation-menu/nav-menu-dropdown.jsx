@@ -10,7 +10,7 @@ const NavDropdown = ({toggleMask}) => {
 
   return (
   <Fragment>
-    <Hamburger toggleDropdown = { toggle } toggleMask = { toggleMask } />
+    <Hamburger toggleDropdown = { toggle } toggleMask = { toggleMask} />
     <div className= {`nav-menu-dropdown ${isToggled}`}>
       <MenuItem itemName = {'Features'} />
       <MenuItem itemName = {'Company'} />

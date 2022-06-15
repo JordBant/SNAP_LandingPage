@@ -7,22 +7,29 @@
     position: absolute;
     background: white;
     z-index: 101;
+    margin-right: auto;
     top: 0;
-    right: -100%;
 
     & > *{ 
         @include size(100%, auto, 2.5px 0, 0); 
     }  
 
     .btns{
-        @include font(500, black, 11px);
+        @include font(500, $BLACK, 11px);
         padding: 12.5px;
         height: 35px;
         border-radius: 10px;
-        border: 2px solid brown;
+    }
+    .login{
+        border: none;
+        background: transparent;
+    }
+    .register{
+        border: 2px solid $GREY;
+        background: transparent;
     }
 }
 
 .nav-menu-dropdown.active{
-    right: 0;
+    // right: 0;
 }

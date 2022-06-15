@@ -17,7 +17,6 @@
   justify-self: NULL;
   -ms-flex-item-align: NULL;
       align-self: NULL;
-  border: 2px solid goldenrod;
   position: relative;
 }
 
@@ -44,7 +43,6 @@
       align-self: NULL;
   margin: 0;
   width: 100%;
-  border: 2px solid red;
 }
 
 .menu-item .dropdown-heading .dropdown-icon {
@@ -77,15 +75,17 @@
 .menu-item h3 {
   font-family: "Epilogue", sans-serif;
   font-weight: 500;
-  color: black;
+  color: dimgray;
   font-size: 12px;
+  margin: 10px 12px;
 }
 
 .menu-item .link-item {
   font-family: "Epilogue", sans-serif;
   font-weight: 500;
-  color: black;
+  color: dimgray;
   font-size: 12px;
+  margin: 10px 12px;
 }
 
 .menu-item.todo::before {

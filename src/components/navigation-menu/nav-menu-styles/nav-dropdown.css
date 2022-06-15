@@ -24,8 +24,8 @@
   position: absolute;
   background: white;
   z-index: 101;
+  margin-right: auto;
   top: 0;
-  right: -100%;
 }
 
 .nav-menu-dropdown > * {
@@ -38,15 +38,20 @@
 .nav-menu-dropdown .btns {
   font-family: "Epilogue", sans-serif;
   font-weight: 500;
-  color: black;
+  color: #141414;
   font-size: 11px;
   padding: 12.5px;
   height: 35px;
   border-radius: 10px;
-  border: 2px solid brown;
 }
 
-.nav-menu-dropdown.active {
-  right: 0;
+.nav-menu-dropdown .login {
+  border: none;
+  background: transparent;
+}
+
+.nav-menu-dropdown .register {
+  border: 2px solid dimgray;
+  background: transparent;
 }
 /*# sourceMappingURL=nav-dropdown.css.map */

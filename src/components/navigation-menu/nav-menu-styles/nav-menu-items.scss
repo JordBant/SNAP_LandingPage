@@ -3,7 +3,6 @@
 
 .menu-item{
     @include flex(center, start, column, NULL, NULL);
-    border: 2px solid goldenrod;
     position: relative;
     & > * {  margin: 8px; }
 
@@ -11,7 +10,6 @@
         @include flex(start, center, NULL, NULL, NULL);
         margin: 0;
         width: 100%;
-        border: 2px solid red;
         .dropdown-icon{
             margin: 0 2px;
             transition: 0.3s ease-in-out all;
@@ -35,11 +33,13 @@
     }
     
     h3{ 
-        @include font(500, black, 12px);
+        @include font(500, $GREY, 12px);
+        margin: 10px 12px;
     }
 
     .link-item{
-        @include font(500, black, 12px);
+        @include font(500, $GREY, 12px);
+        margin: 10px 12px;
     }
 }
 
