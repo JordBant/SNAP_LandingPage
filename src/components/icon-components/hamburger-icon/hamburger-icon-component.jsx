@@ -1,13 +1,19 @@
 import './hamburger-icon-styles/hamburger-icon.css'
 import { useState } from "react";
 
-const HamburgerIcon = () => {
-  const [toggle, setToggle] = useState(false);
-  const handleToggle = (event) => setToggle(!toggle) 
-  const isToggled = toggle ? 'on' : '';
+const HamburgerIcon = ({toggleDropdown, toggleMask}) => {
+  const [clicked, setClicked] = useState(false)
+  const isClicked = clicked ? 'on' : '' ;
 
-  return (
-    <div className={`menu-toggle ${isToggled} `} onClick = {handleToggle} > 
+   return (
+    <div 
+    className={`menu-toggle ${ isClicked } `} 
+    onClick = {() => {
+      setClicked(!clicked)
+      toggleDropdown()
+      toggleMask()
+      }
+    } >
         <div className="hamburger">
             <span className = 'line'/>
             <span className = 'line'/>

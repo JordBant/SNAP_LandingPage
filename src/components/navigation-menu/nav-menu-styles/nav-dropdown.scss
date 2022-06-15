@@ -1,10 +1,14 @@
 @import '../../../App-styles/mixins';
 @import '../../../App-styles/variables';
 
-.nav-menu-container{
-    @include size(100%, auto, 0, 10px 0);
-    @include flex(center, start, column, NULL, NULL);
-    border: 2px solid cyan;
+.nav-menu-dropdown{
+    @include size(220px, 100vh, 0, 75px 10px);
+    @include flex(start, center, column, NULL, NULL);
+    position: absolute;
+    background: white;
+    z-index: 101;
+    top: 0;
+    right: -100%;
 
     & > *{ 
         @include size(100%, auto, 2.5px 0, 0); 
@@ -17,4 +21,8 @@
         border-radius: 10px;
         border: 2px solid brown;
     }
+}
+
+.nav-menu-dropdown.active{
+    right: 0;
 }

@@ -3,11 +3,40 @@
 .nav-menu {
   margin: 0;
   padding: 0 25px;
-  width: 55%;
-  height: 100%;
-  position: absolute;
+  width: 100%;
+  height: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: NULL;
+          flex-direction: NULL;
+  justify-self: NULL;
+  -ms-flex-item-align: NULL;
+      align-self: NULL;
   border: 2px solid green;
   background: peachpuff;
   list-style: none;
+  position: relative;
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-menu.masked::after {
+  content: '';
+  margin: 0;
+  padding: 0;
+  width: 1000vw;
+  height: 1000vh;
+  inset: 0 0 0 0;
+  position: absolute;
+  background: rgba(0, 0, 0, 0.59);
 }
 /*# sourceMappingURL=nav-menu.css.map */
