@@ -9,6 +9,7 @@
     z-index: 101;
     margin-right: auto;
     top: 0;
+    right: -300px;
 
     & > *{ 
         @include size(100%, auto, 2.5px 0, 0); 
@@ -31,5 +32,5 @@
 }
 
 .nav-menu-dropdown.active{
-    // right: 0;
+    right: 0;
 }

@@ -26,6 +26,7 @@
   z-index: 101;
   margin-right: auto;
   top: 0;
+  right: -300px;
 }
 
 .nav-menu-dropdown > * {
@@ -53,5 +54,9 @@
 .nav-menu-dropdown .register {
   border: 2px solid dimgray;
   background: transparent;
+}
+
+.nav-menu-dropdown.active {
+  right: 0;
 }
 /*# sourceMappingURL=nav-dropdown.css.map */

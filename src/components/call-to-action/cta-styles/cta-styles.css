@@ -1,17 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@500;700&display=swap");
-body {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-  margin: 0;
-}
-
-.App {
+.cta-container {
   margin: 0;
   padding: 0;
-  width: 100vw;
-  height: 100vh;
-  border: 2px solid red;
-  overflow-x: hidden;
+  width: 100%;
+  height: auto;
+  border: 2px solid;
 }
-/*# sourceMappingURL=App.css.map */
+/*# sourceMappingURL=cta-styles.css.map */

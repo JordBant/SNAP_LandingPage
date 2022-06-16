@@ -1,0 +1,7 @@
+@import '../../../App-styles/mixins';
+@import '../../../App-styles/variables';
+
+.cta-container{
+    @include size(100%, auto, 0, 0);
+    border: 2px solid;
+}
