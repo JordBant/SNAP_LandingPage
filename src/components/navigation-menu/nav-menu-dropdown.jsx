@@ -1,6 +1,7 @@
 import {React, Fragment, useState} from 'react'
 import MenuItem from './menu-item'
 import Hamburger from '../icon-components/hamburger-icon/hamburger-icon-component'
+import CTAButton from '../button-cta/button-call-to-action-component'
 import './nav-menu-styles/nav-dropdown.css'
 
 const NavDropdown = ({toggleMask}) => {
@@ -17,8 +18,8 @@ const NavDropdown = ({toggleMask}) => {
       <MenuItem itemName = {'Careers'} link/>
       <MenuItem itemName = {'About'} link/>
 
-      <button className="btns login"> Login</button>
-      <button className="btns register"> Register</button>
+      <CTAButton buttonBody= 'Login' altStyle= 'clear' />
+      <CTAButton buttonBody= 'Register' altStyle= 'outline' />
     </div>
   </Fragment>
   )

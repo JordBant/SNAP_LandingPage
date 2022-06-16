@@ -1,0 +1,23 @@
+@import '../../../App-styles/mixins';
+@import '../../../App-styles/variables';
+
+.client-list{
+    @include flex(space-around, center, NULL, NULL, NULL);
+    @include size(100%, auto, 0, 0);
+    border: 2px solid black;
+    overflow: visible;
+    list-style: none;
+
+    .client-item{
+        @include size(auto, auto, 0, 0);
+        overflow: visible;
+        border: 2px solid salmon;
+
+        .client-logo{
+            @include size(auto, 20px, 0, 0);
+            overflow: visible;
+            border: 2px solid red;
+
+        }
+    }
+}

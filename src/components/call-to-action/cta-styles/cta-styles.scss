@@ -2,6 +2,20 @@
 @import '../../../App-styles/variables';
 
 .cta-container{
-    @include size(100%, auto, 0, 0);
-    border: 2px solid;
+    @include size(100%, 300px, 0, 0);
+    @include flex(start, center, column, NULL, NULL);
+    border: 2px solid cyan;
+    & > *{
+        margin: 12px
+    }
+
+    .cta-heading{
+        @include font(700, $BLACK, 32px);
+        text-align: center;
+    }
+
+    .cta-body{
+        @include font(500, $GREY, 18px);
+        text-align: center;
+    }
 }

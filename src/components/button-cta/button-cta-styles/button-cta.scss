@@ -1,0 +1,21 @@
+@import '../../../App-styles/mixins';
+@import '../../../App-styles/variables';
+
+.cta-button{
+    @include size(110px, 37px, 0, 0);
+    @include font(700, $WHITE, 12px);
+    background: $BLACK;
+    border: none;
+    border-radius: 10px;
+}
+
+.cta-button.clear{
+    @include font(500, $BLACK, 12px);
+    background: transparent;
+}
+
+.cta-button.outline{
+    @include font(500, $BLACK, 12px);
+    border: 2px solid $BLACK;
+    background: transparent;
+}

@@ -4,7 +4,43 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: auto;
-  border: 2px solid;
+  height: 300px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  justify-self: NULL;
+  -ms-flex-item-align: NULL;
+      align-self: NULL;
+  border: 2px solid cyan;
+}
+
+.cta-container > * {
+  margin: 12px;
+}
+
+.cta-container .cta-heading {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 700;
+  color: #141414;
+  font-size: 32px;
+  text-align: center;
+}
+
+.cta-container .cta-body {
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  color: dimgray;
+  font-size: 18px;
+  text-align: center;
 }
 /*# sourceMappingURL=cta-styles.css.map */

@@ -1,8 +1,8 @@
-import React from 'react'
+import './button-cta-styles/button-cta.css'
 
-const CTAButton = ({buttonName, buttonFunction}) => {
+const CTAButton = ({buttonBody, buttonFunction, altStyle}) => {
   return (
-    <button onClick={buttonFunction}>{ buttonName }</button>
+    <button className={`cta-button ${altStyle}`} onClick={() => buttonFunction}>{ buttonBody }</button>
   )
 }
 
