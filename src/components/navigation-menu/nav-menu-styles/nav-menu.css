@@ -37,4 +37,37 @@
   position: absolute;
   background: rgba(0, 0, 0, 0.59);
 }
+
+@media only screen and (min-width: 740px) {
+  .nav-menu {
+    margin: 0;
+    padding: 25px;
+    width: 100%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: NULL;
+            flex-direction: NULL;
+    justify-self: NULL;
+    -ms-flex-item-align: NULL;
+        align-self: NULL;
+  }
+  .nav-menu.masked::after {
+    content: '';
+    margin: 0;
+    padding: 0;
+    width: 0;
+    height: 0;
+    background: none;
+  }
+}
 /*# sourceMappingURL=nav-menu.css.map */

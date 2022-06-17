@@ -7,8 +7,10 @@ function App() {
   return (
     <div className="App">
       <NavMenu />
-      <HeroImg/>
-      <CallToAction/>
+      <div className="main-container">
+        <HeroImg/>
+        <CallToAction/>
+      </div>
     </div>
   );
 }

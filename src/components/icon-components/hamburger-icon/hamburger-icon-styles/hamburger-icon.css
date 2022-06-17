@@ -113,4 +113,10 @@
   -webkit-transition-delay: .375s;
           transition-delay: .375s;
 }
+
+@media only screen and (min-width: 870px) {
+  .menu-toggle {
+    display: none;
+  }
+}
 /*# sourceMappingURL=hamburger-icon.css.map */

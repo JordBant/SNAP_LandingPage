@@ -18,3 +18,17 @@
         background: rgba(0, 0, 0, 0.59);
     }
 }
+
+@media only screen and (min-width: 740px){
+    .nav-menu{
+        @include size(100%, auto, 0, 25px);
+        @include flex(space-between, center, NULL, NULL, NULL);
+    }
+    .nav-menu.masked{
+        &::after{
+            content: '';
+            @include size(0, 0, 0, 0);
+            background: none;
+        }
+    }
+}

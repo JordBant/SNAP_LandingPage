@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   width: 100%;
-  height: 300px;
+  height: auto;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -21,7 +21,6 @@
   justify-self: NULL;
   -ms-flex-item-align: NULL;
       align-self: NULL;
-  border: 2px solid cyan;
 }
 
 .cta-container > * {
@@ -32,7 +31,7 @@
   font-family: "Epilogue", sans-serif;
   font-weight: 700;
   color: #141414;
-  font-size: 32px;
+  font-size: 42px;
   text-align: center;
 }
 
@@ -42,5 +41,47 @@
   color: dimgray;
   font-size: 18px;
   text-align: center;
+}
+
+@media only screen and (min-width: 740px) {
+  .cta-container {
+    margin: 0;
+    padding: 0 50px;
+    width: 100%;
+    height: 80%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: start;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    justify-self: NULL;
+    -ms-flex-item-align: NULL;
+        align-self: NULL;
+  }
+  .cta-container > * {
+    margin: 20px 0;
+  }
+  .cta-container .cta-heading {
+    font-family: "Epilogue", sans-serif;
+    font-weight: 700;
+    color: #141414;
+    font-size: 72px;
+    text-align: left;
+  }
+  .cta-container .cta-body {
+    font-family: "Epilogue", sans-serif;
+    font-weight: 500;
+    color: dimgray;
+    font-size: 28px;
+    text-align: left;
+  }
 }
 /*# sourceMappingURL=cta-styles.css.map */

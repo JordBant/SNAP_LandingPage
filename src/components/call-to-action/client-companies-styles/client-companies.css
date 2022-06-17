@@ -20,7 +20,6 @@
   padding: 0;
   width: 100%;
   height: auto;
-  border: 2px solid black;
   overflow: visible;
   list-style: none;
 }
@@ -31,7 +30,6 @@
   width: auto;
   height: auto;
   overflow: visible;
-  border: 2px solid salmon;
 }
 
 .client-list .client-item .client-logo {
@@ -40,6 +38,5 @@
   width: auto;
   height: 20px;
   overflow: visible;
-  border: 2px solid red;
 }
 /*# sourceMappingURL=client-companies.css.map */

@@ -2,11 +2,12 @@
 @import '../../../App-styles/variables';
 
 .cta-button{
-    @include size(110px, 37px, 0, 0);
     @include font(700, $WHITE, 12px);
+    @include size(110px, 40px, 0, 0);
     background: $BLACK;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .cta-button.clear{
@@ -18,4 +19,11 @@
     @include font(500, $BLACK, 12px);
     border: 2px solid $BLACK;
     background: transparent;
+}
+
+@media only screen and (min-width: 740px) {
+    .cta-button, .cta-button.outline, .cta-button.clear{
+        @include size(150px, 50px, 0, 0);
+        font-size: 15px;
+    }
 }

@@ -13,13 +13,17 @@ const NavDropdown = ({toggleMask}) => {
   <Fragment>
     <Hamburger toggleDropdown = { toggle } toggleMask = { toggleMask} />
     <div className= {`nav-menu-dropdown ${isToggled}`}>
-      <MenuItem itemName = {'Features'} />
-      <MenuItem itemName = {'Company'} />
-      <MenuItem itemName = {'Careers'} link/>
-      <MenuItem itemName = {'About'} link/>
+      <div className="menu-item-container">
+        <MenuItem itemName = {'Features'} />
+        <MenuItem itemName = {'Company'} />
+        <MenuItem itemName = {'Careers'} link/>
+        <MenuItem itemName = {'About'} link/>
+      </div>
 
-      <CTAButton buttonBody= 'Login' altStyle= 'clear' />
-      <CTAButton buttonBody= 'Register' altStyle= 'outline' />
+      <div className="button-container">
+        <CTAButton buttonBody= 'Login' altStyle= 'clear' />
+        <CTAButton buttonBody= 'Register' altStyle= 'outline' />
+      </div>
     </div>
   </Fragment>
   )

@@ -2,7 +2,13 @@
 @import '../../../../App-styles/variables';
 
 .hero-img{
-    @include size(100%, 300px, 0, 0);
+    @include size(100%, 50vh, 0, 0);
     background: center / contain no-repeat url('../../../../assets/image-hero-mobile.png');
-    border: 2px solid slateblue;
+}
+
+@media only screen and (min-width: 740px) {
+    .hero-img{
+        @include size(100%, 90%, 0 50px, 0);
+        background: center / contain no-repeat url('../../../../assets/image-hero-desktop.png');
+    }
 }

@@ -14,8 +14,36 @@
     & > *{ 
         @include size(100%, auto, 2.5px 0, 0); 
     }
+
+    .button-container{
+        @include flex(center, center, column, NULL, NULL);
+    }
 }
 
 .nav-menu-dropdown.active{
     right: 0;
+}
+
+@media only screen and (min-width: 870px){
+
+    .nav-menu-dropdown, .nav-menu-dropdown.active{
+        @include size(90%, 100%, 0, 0);
+        @include flex(space-between, center, row, NULL, NULL);
+        position: relative;
+        right: 0;
+
+        & > *{ 
+            @include size(auto, auto, 0, 0); 
+        }
+
+        .menu-item-container{
+            @include flex(center, center, NULL, NULL, NULL);
+            @include size(auto, auto, 0, 0);
+        }
+
+        .button-container{
+            @include size(auto, auto, 0, 0);
+            @include flex(center, center, row, NULL, NULL);
+        }
+    }
 }

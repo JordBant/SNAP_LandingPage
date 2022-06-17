@@ -53,6 +53,7 @@
   background: transparent;
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+  cursor: pointer;
 }
 
 .menu-item .dropdown-heading .dropdown-icon.active {
@@ -72,7 +73,7 @@
   max-height: 500px;
 }
 
-.menu-item h3 {
+.menu-item .dropdown-title {
   font-family: "Epilogue", sans-serif;
   font-weight: 500;
   color: dimgray;
@@ -86,6 +87,7 @@
   color: dimgray;
   font-size: 12px;
   margin: 10px 12px;
+  cursor: pointer;
 }
 
 .menu-item.todo::before {
@@ -110,5 +112,14 @@
   content: url("../../../assets/icon-planning.svg");
   position: absolute;
   right: 100%;
+}
+
+@media only screen and (min-width: 740px) {
+  .menu-item .dropdown-title, .menu-item .link-item {
+    font-family: "Epilogue", sans-serif;
+    font-weight: 500;
+    color: #141414;
+    font-size: 15px;
+  }
 }
 /*# sourceMappingURL=nav-menu-items.css.map */
